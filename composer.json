@@ -4,6 +4,13 @@
         "psr-4": {
             "eaquinta\\FormComponentsPackage\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "eaquinta\\FormComponentsPackage\\Providers\\FormComponentsPackageServiceProvider"
+            ]
+        }
     },    
     "authors": [
         {
