@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class FFormInput extends Component
+class TextInput extends Component
 {
     public $prefixId;
     public $name;

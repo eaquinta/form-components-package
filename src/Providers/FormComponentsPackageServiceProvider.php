@@ -1,6 +1,6 @@
 <?php
 
-namespace eaquinta\FormComponentsPackage;
+namespace eaquinta\FormComponentsPackage\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
@@ -13,7 +13,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'fcomponents');
 
         // Registrar el componente
-        Blade::component('fcomponent-input', \eaquinta\FormComponentsPackage\Components\FFormInput::class);
+        Blade::component('fc-text-input', \eaquinta\FormComponentsPackage\Components\TextInput::class);
     }
 
     public function register()
