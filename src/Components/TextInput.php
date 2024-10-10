@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components;
+namespace Eaquinta\FormComponentsPackage\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -28,6 +28,6 @@ class TextInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('fcomponents::form-input');
+        return view('fcomponents::components.text-input');
     }
 }

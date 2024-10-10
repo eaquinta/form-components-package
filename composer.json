@@ -1,6 +1,7 @@
 {
     "name": "eaquinta/form-components-package",
     "type": "package",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Eaquinta\\FormComponentsPackage\\": "src/"
@@ -19,5 +20,8 @@
             "email": "eaquinta@outlook.es"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^11.0"
+    }
 }

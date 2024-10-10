@@ -19,7 +19,11 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
      * Bootstrap services.
      */
     public function boot(): void
-    {
-        Blade::component('fc-text-input', 'components.hola');
+    {       
+        // Cargar vistas
+        $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
+        Blade::component('fc-text-input', \Eaquinta\FormComponentsPackage\Components\TextInput::class);        
+        //Blade::component('fcomponents::components.hola', 'fc-text-input');
+        //dd('Holax');
     }
 }
