@@ -5,13 +5,7 @@
             "eaquinta\\FormComponentsPackage\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "eaquinta\\FormComponentsPackage\\FormComponentsPackageServiceProvider"
-            ]
-        }
-    },
+  
     "authors": [
         {
             "name": "Estuardo Quintanilla",
