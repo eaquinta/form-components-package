@@ -4,8 +4,7 @@
         "psr-4": {
             "eaquinta\\FormComponentsPackage\\": "src/"
         }
-    },
-  
+    },  
     "authors": [
         {
             "name": "Estuardo Quintanilla",
