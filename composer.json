@@ -1,0 +1,15 @@
+{
+    "name": "eaquinta/form-components-package",
+    "autoload": {
+        "psr-4": {
+            "eaquinta\\FormComponentsPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Estuardo Quintanilla",
+            "email": "eaquinta@outlook.es"
+        }
+    ],
+    "require": {}
+}
