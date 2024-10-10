@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'eaquinta\\FormComponentsPackage\\' => array($baseDir . '/src'),
+    'Eaquinta\\FormComponentsPackage\\' => array($baseDir . '/src'),
 );

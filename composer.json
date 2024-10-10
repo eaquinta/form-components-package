@@ -1,14 +1,15 @@
 {
     "name": "eaquinta/form-components-package",
+    "type": "package",
     "autoload": {
         "psr-4": {
-            "eaquinta\\FormComponentsPackage\\": "src/"
+            "Eaquinta\\FormComponentsPackage\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "eaquinta\\FormComponentsPackage\\Providers\\FormComponentsPackageServiceProvider"
+                "Eaquinta\\FormComponentsPackage\\FormComponentsPackageServiceProvider"
             ]
         }
     },    
