@@ -13,7 +13,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'fcomponents');
 
         // Registrar el componente
-        Blade::component('fcomponent-input', \eaquinta\FormComponentsPackage\Components\FormInput::class);
+        Blade::component('fcomponent-input', \eaquinta\FormComponentsPackage\Components\FFormInput::class);
     }
 
     public function register()
