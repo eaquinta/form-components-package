@@ -13,7 +13,8 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'fcomponents');
 
         // Registrar el componente
-        Blade::component('fc-text-input', \eaquinta\FormComponentsPackage\Components\TextInput::class);
+        //Blade::component('fc-text-input', \eaquinta\FormComponentsPackage\Components\TextInput::class);
+        Blade::component('fc-text-input', 'components.hola');
     }
 
     public function register()
