@@ -11,6 +11,7 @@ use Eaquinta\FormComponentsPackage\Components\EmailInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
+use Eaquinta\FormComponentsPackage\Components\SelectMultipleInput;
 
 class FormComponentsPackageServiceProvider extends ServiceProvider
 {
@@ -34,7 +35,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-date-input',               DateInput::class);
         Blade::component('fc-email-input',              EmailInput::class);        
         Blade::component('fc-password-input',           PasswordInput::class);
-        Blade::component('fc-select-multiple-input',    PasswordInput::class);
+        Blade::component('fc-select-multiple-input',    SelectMultipleInput::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
         Blade::component('fc-button-add',               ButtonAdd::class);
