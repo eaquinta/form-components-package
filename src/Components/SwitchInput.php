@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Log;
 
-class TextInput extends Component
+class SwitchInput extends Component
 {
     public $prefixId;
     public $name;
@@ -32,6 +32,6 @@ class TextInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('fcomponents::components.text-input');
+        return view('fcomponents::components.switch-input');
     }
 }
