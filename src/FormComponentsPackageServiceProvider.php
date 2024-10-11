@@ -4,6 +4,7 @@ namespace Eaquinta\FormComponentsPackage;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Eaquinta\FormComponentsPackage\Components\ButtonAdd;
 use Eaquinta\FormComponentsPackage\Components\DateInput;
 use Eaquinta\FormComponentsPackage\Components\TextInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
