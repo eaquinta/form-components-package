@@ -18,11 +18,11 @@ class TextInput extends Component
      */
     public function __construct($name, $label, $required = false, $prefixId = '')
     {
-        Log::info($prefixId);        
+        //Log::info($prefixId);        
         $this->name = $name;
         $this->label = $label;
         $this->required = $required;
-        $this->$prefixId = $prefixId;
+        $this->prefixId = $prefixId;
     }
 
     /**
