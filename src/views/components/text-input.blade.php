@@ -5,5 +5,5 @@
     @endif
 </label>
 
-<input type="text" name="{{ $name }}" id="{{$prefixId}}{{ $name }}" class="form-control rounded-1 bg-white" placeholder="{{ __($label) }}">
+<input type="text" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" class="form-control rounded-1 bg-white" placeholder="{{ __($label) }}">
 <div class="invalid-feedback"></div>
