@@ -13,16 +13,18 @@ class TextInput extends Component
     public $name;
     public $label;
     public $required;
+    public $readOnly;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '')
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false)
     {
         //Log::info($prefixId);        
-        $this->name = $name;
-        $this->label = $label;
+        $this->name     = $name;
+        $this->label    = $label;
         $this->required = $required;
         $this->prefixId = $prefixId;
+        $this->readOnly   = $readOnly;
     }
 
     /**
