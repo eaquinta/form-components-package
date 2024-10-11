@@ -7,9 +7,11 @@ use Illuminate\Support\ServiceProvider;
 use Eaquinta\FormComponentsPackage\Components\ButtonAdd;
 use Eaquinta\FormComponentsPackage\Components\DateInput;
 use Eaquinta\FormComponentsPackage\Components\TextInput;
+use Eaquinta\FormComponentsPackage\Components\ButtonEdit;
 use Eaquinta\FormComponentsPackage\Components\EmailInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
+use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
 use Eaquinta\FormComponentsPackage\Components\SelectMultipleInput;
 
@@ -36,9 +38,11 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-email-input',              EmailInput::class);        
         Blade::component('fc-password-input',           PasswordInput::class);
         Blade::component('fc-select-multiple-input',    SelectMultipleInput::class);
+        Blade::component('fc-check-box-input',          CheckBoxInput::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
         Blade::component('fc-button-add',               ButtonAdd::class);
+        Blade::component('fc-button-edit',               ButtonEdit::class);
         //Blade::component('fcomponents::components.hola', 'fc-text-input');
         //dd('Holax');
     }
