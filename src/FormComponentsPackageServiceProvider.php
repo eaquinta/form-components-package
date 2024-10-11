@@ -29,14 +29,15 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
     {       
         // Cargar vistas
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
-        Blade::component('fc-text-input',       TextInput::class);
-        Blade::component('fc-switch-input',     SwitchInput::class);
-        Blade::component('fc-date-input',       DateInput::class);
-        Blade::component('fc-email-input',      EmailInput::class);        
-        Blade::component('fc-password-input',   PasswordInput::class);
+        Blade::component('fc-text-input',               TextInput::class);
+        Blade::component('fc-switch-input',             SwitchInput::class);
+        Blade::component('fc-date-input',               DateInput::class);
+        Blade::component('fc-email-input',              EmailInput::class);        
+        Blade::component('fc-password-input',           PasswordInput::class);
+        Blade::component('fc-select-multiple-input',    PasswordInput::class);
 
-        Blade::component('fc-button-close',     ButtonClose::class);
-        Blade::component('fc-button-add',       ButtonAdd::class);
+        Blade::component('fc-button-close',             ButtonClose::class);
+        Blade::component('fc-button-add',               ButtonAdd::class);
         //Blade::component('fcomponents::components.hola', 'fc-text-input');
         //dd('Holax');
     }
