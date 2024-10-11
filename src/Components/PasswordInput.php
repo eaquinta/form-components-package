@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Log;
 
-class TextInput extends Component
+class PasswordInput extends Component
 {
     public $prefixId;
     public $name;
