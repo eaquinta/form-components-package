@@ -5,6 +5,7 @@ namespace Eaquinta\FormComponentsPackage\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\Log;
 
 class TextInput extends Component
 {
@@ -17,8 +18,7 @@ class TextInput extends Component
      */
     public function __construct($name, $label, $required = false, $prefixId = '')
     {
-        if (!empty($prefixId))
-        {dd($prefixId);}
+        Log::info($prefixId);        
         $this->name = $name;
         $this->label = $label;
         $this->required = $required;
