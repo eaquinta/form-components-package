@@ -17,7 +17,8 @@ class TextInput extends Component
      */
     public function __construct($name, $label, $required = false, $prefixId = '')
     {
-        dd($prefixId);
+        if (!empty($prefixId))
+        {dd($prefixId);}
         $this->name = $name;
         $this->label = $label;
         $this->required = $required;
