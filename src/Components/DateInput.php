@@ -32,6 +32,6 @@ class TextInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('fcomponents::components.text-input');
+        return view('fcomponents::components.date-input');
     }
 }

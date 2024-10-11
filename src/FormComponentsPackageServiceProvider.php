@@ -26,6 +26,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
         Blade::component('fc-text-input', TextInput::class);
         Blade::component('fc-switch-input', SwitchInput::class);
+        Blade::component('fc-date-input', DateInput::class);
         //Blade::component('fcomponents::components.hola', 'fc-text-input');
         //dd('Holax');
     }
