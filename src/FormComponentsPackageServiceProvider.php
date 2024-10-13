@@ -42,7 +42,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
 
         Blade::component('fc-button-close',             ButtonClose::class);
         Blade::component('fc-button-add',               ButtonAdd::class);
-        Blade::component('fc-button-edit',               ButtonEdit::class);
+        Blade::component('fc-button-edit',              ButtonEdit::class);
         //Blade::component('fcomponents::components.hola', 'fc-text-input');
         //dd('Holax');
     }

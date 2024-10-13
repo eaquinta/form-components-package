@@ -4,7 +4,7 @@
         <span class="text-danger">*</span>
     @endif
 </label>
-<select class="form-select" name="{{ $name }}[]" id="{{ $prefixId }}{{ $name }}" multiple="multiple" data-placeholder="{{ __($label) }}"></select>
+<select class="form-select select2" name="{{ $name }}[]" id="{{ $prefixId }}{{ $name }}" multiple="multiple" data-placeholder="{{ __($label) }}"></select>
 @if (!$readOnly)
 <div class="invalid-feedback"></div>
 @endif
