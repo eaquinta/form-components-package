@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 class ButtonCustom extends Component
 {
     public $id;
-    //public $name;
+    public $buttonClass;
     public $label;
     public $icon;
     //public $required;
@@ -18,12 +18,13 @@ class ButtonCustom extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $label, $icon = 'far fa-save')
+    public function __construct($id, $buttonClass, $label, $icon = 'far fa-save')
     {
         //Log::info($prefixId);        
-        $this->id     = $id;
-        $this->label    = $label;
-        $this->icon     = $icon;
+        $this->id           = $id;
+        $this->buttonClass  = $buttonClass;
+        $this->label        = $label;
+        $this->icon         = $icon;
         // $this->prefixId = $prefixId;
         // $this->readOnly = $readOnly;
     }
