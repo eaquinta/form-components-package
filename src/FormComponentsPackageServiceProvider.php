@@ -10,6 +10,7 @@ use Eaquinta\FormComponentsPackage\Components\TextInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonEdit;
 use Eaquinta\FormComponentsPackage\Components\EmailInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
+use Eaquinta\FormComponentsPackage\Components\SelectInput;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonCustom;
 use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
@@ -39,6 +40,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-email-input',              EmailInput::class);        
         Blade::component('fc-password-input',           PasswordInput::class);
         Blade::component('fc-select-multiple-input',    SelectMultipleInput::class);
+        Blade::component('fc-select-input',             SelectInput::class);
         Blade::component('fc-check-box-input',          CheckBoxInput::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
