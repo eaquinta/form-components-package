@@ -4,7 +4,13 @@
         <span class="text-danger">*</span>
     @endif
 </label>
-<input type="date" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" class="form-control rounded-1 bg-white" placeholder="{{ __($label) }}" {{ $readOnly ? 'disabled readonly' : ''}}>
+<input type="date"
+    name="{{ $name }}" 
+    id="{{ $prefixId }}{{ $name }}"
+    class="form-control rounded-1 bg-white" 
+    placeholder="{{ __($label) }}"
+    value="{{ $value ?? '' }}" 
+    {{ $readOnly ? 'disabled readonly' : ''}}>
 @if (!$readOnly)
-<div class="invalid-feedback"></div>
+    <div class="invalid-feedback"></div>
 @endif
