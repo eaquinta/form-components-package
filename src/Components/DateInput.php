@@ -14,7 +14,7 @@ class DateInput extends Component
     public $label;
     public $required;
     public $readOnly;
-    public $value
+    public $value;
     /**
      * Create a new component instance.
      */
