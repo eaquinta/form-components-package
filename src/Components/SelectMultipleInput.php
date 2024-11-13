@@ -14,10 +14,11 @@ class SelectMultipleInput extends Component
     public $label;
     public $required;
     public $readOnly;
+    public $class;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $class = '')
     {
         //Log::info($prefixId);        
         $this->name     = $name;
@@ -25,6 +26,7 @@ class SelectMultipleInput extends Component
         $this->required = $required;
         $this->prefixId = $prefixId;
         $this->readOnly = $readOnly;
+        $this->class    = $class;
     }
 
     /**
