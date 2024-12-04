@@ -15,10 +15,11 @@ class SelectInput extends Component
     public $required;
     public $readOnly;
     public $optionsList;
+    public $value;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [])
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [], $value = null)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -27,6 +28,7 @@ class SelectInput extends Component
         $this->prefixId     = $prefixId;
         $this->readOnly     = $readOnly;
         $this->optionsList  = $optionsList;
+        $this->value        = $value;
     }
 
     /**
