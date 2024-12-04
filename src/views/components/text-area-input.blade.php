@@ -14,5 +14,6 @@
     aria-invalid="false"
     {{ $readOnly ? 'disabled readonly' : ''}}
 >
+{{ $value }}
 </textarea>
 <div class="invalid-feedback"></div>
