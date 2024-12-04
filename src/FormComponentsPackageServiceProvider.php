@@ -15,6 +15,7 @@ use Eaquinta\FormComponentsPackage\Components\SwitchInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonCustom;
 use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
+use Eaquinta\FormComponentsPackage\Components\TextAreaInput;
 use Eaquinta\FormComponentsPackage\Components\SelectMultipleInput;
 
 class FormComponentsPackageServiceProvider extends ServiceProvider
@@ -35,6 +36,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         // Cargar vistas
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
         Blade::component('fc-text-input',               TextInput::class);
+        Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
         Blade::component('fc-date-input',               DateInput::class);
         Blade::component('fc-email-input',              EmailInput::class);        
