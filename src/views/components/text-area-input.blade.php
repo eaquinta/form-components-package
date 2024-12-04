@@ -4,7 +4,6 @@
         <span class="text-danger">*</span>
     @endif
 </label>
-{{-- <input type="text" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" class="form-control rounded-1 bg-white" {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} {{ $readOnly ? 'disabled readonly' : ''}}> --}}
 <textarea 
     class="form-control valid rounded-1 bg-white" 
     cols="{{ $cols }}"
@@ -12,6 +11,8 @@
     name="{{ $name }}" 
     rows="{{ $rows }}" 
     {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}}
-    aria-invalid="false">
+    aria-invalid="false"
+    {{ $readOnly ? 'disabled readonly' : ''}}>
+>
 </textarea>
 <div class="invalid-feedback"></div>

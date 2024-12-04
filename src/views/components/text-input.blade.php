@@ -4,5 +4,12 @@
         <span class="text-danger">*</span>
     @endif
 </label>
-<input type="text" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" class="form-control rounded-1 bg-white" {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} {{ $readOnly ? 'disabled readonly' : ''}}>
+<input 
+    type="text" 
+    name="{{ $name }}" 
+    id="{{ $prefixId }}{{ $name }}" 
+    class="form-control rounded-1 bg-white" 
+    value="{{ $value }}"
+    {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} 
+    {{ $readOnly ? 'disabled readonly' : ''}}>
 <div class="invalid-feedback"></div>
