@@ -6,10 +6,12 @@
 </label>
 
 <select class="form-select" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" data-placeholder="{{ __($label) }}">
-    @foreach ($optionsList as $key => $value)
-        <option value="{{ $key }}">{{ $value }}</option>
+    @foreach ($optionsList as $key => $optionValue)
+        <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
+            {{ $optionValue }}
+        </option>
     @endforeach
 </select>
 @if (!$readOnly)
-<div class="invalid-feedback"></div>
+    <div class="invalid-feedback"></div>
 @endif
