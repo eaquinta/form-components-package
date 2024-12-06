@@ -10,7 +10,7 @@
     type="text" 
     name="{{ $name }}" 
     id="{{ $prefixId }}{{ $name }}" 
-    class="form-control rounded-1 bg-white {{ $label === false ? 'mt-2' : '' }}" 
+    class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }}" 
     value="{{ $value }}"
     {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} 
     {{ $readOnly ? 'disabled readonly' : ''}}>
