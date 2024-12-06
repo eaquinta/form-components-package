@@ -1,14 +1,16 @@
-<label for="{{ $name }}" class="fw-500 fs-rem-80">
-    {{ __($label) }}
-    @if($required)
-        <span class="text-danger">*</span>
-    @endif
-</label>
+@if($label !== false)    
+    <label for="{{ $name }}" class="fw-500 fs-rem-80">
+        {{ __($label) }}
+        @if($required)
+            <span class="text-danger">*</span>
+        @endif
+    </label>
+@endif
 <input 
     type="text" 
     name="{{ $name }}" 
     id="{{ $prefixId }}{{ $name }}" 
-    class="form-control rounded-1 bg-white" 
+    class="form-control rounded-1 bg-white {{ $label === false ? 'mt-2' : '' }}" 
     value="{{ $value }}"
     {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} 
     {{ $readOnly ? 'disabled readonly' : ''}}>
