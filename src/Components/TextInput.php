@@ -16,10 +16,11 @@ class TextInput extends Component
     public $readOnly;
     public $placeholder;
     public $value;
+    public $class;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '')
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -29,6 +30,7 @@ class TextInput extends Component
         $this->readOnly     = $readOnly;
         $this->placeholder  = $placeholder;
         $this->value        = $value;
+        $this->class        = $class;
     }
 
     /**
