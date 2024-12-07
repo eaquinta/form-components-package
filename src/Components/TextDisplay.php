@@ -17,10 +17,11 @@ class TextDisplay extends Component
     public $placeholder;
     public $value;
     public $class;
+    public $border;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '')
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '', $border = true)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -31,6 +32,7 @@ class TextDisplay extends Component
         $this->placeholder  = $placeholder;
         $this->value        = $value;
         $this->class        = $class;
+        $this->border       = $border;
     }
 
     /**
