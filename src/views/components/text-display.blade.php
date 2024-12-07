@@ -8,7 +8,7 @@
 @endif
 <div 
     id="{{ $prefixId }}{{ $name }}" 
-    {{ $border ? 'style="border-bottom: 1px solid #ced4da;"' : ''}}
+    style="{{ $border ? 'border-bottom: 1px solid #ced4da;' : '' }}"    
 >{{ $value }}</div>
 {{-- <input 
     type="text" 
