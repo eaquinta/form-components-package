@@ -12,6 +12,7 @@ use Eaquinta\FormComponentsPackage\Components\EmailInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
 use Eaquinta\FormComponentsPackage\Components\SelectInput;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
+use Eaquinta\FormComponentsPackage\Components\TextDisplay;
 use Eaquinta\FormComponentsPackage\Components\ButtonCustom;
 use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
