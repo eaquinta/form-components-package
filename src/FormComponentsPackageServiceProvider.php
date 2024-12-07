@@ -35,6 +35,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
     {       
         // Cargar vistas
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
+        Blade::component('fc-text-display',             TextDisplay::class);
         Blade::component('fc-text-input',               TextInput::class);
         Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
