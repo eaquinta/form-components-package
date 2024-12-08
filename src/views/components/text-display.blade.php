@@ -9,7 +9,7 @@
 <div style="display: grid;">
     <div 
     id="{{ $prefixId }}{{ $name }}" 
-    style="{{ $border ? 'border-bottom: 1px solid #ced4da;' : '' }} height: 25px; white-space: nowrap;"
+    style="{{ $border ? 'border-bottom: 1px solid #ced4da;' : '' }} height: 25px; white-space: nowrap; font-size: 14px;"
     >{{ $value }}</div>
 </div>
 
