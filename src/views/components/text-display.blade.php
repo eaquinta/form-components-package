@@ -9,7 +9,7 @@
 <div style="display: grid; width: 100%; overflow: hidden;">
     <div 
     id="{{ $prefixId }}{{ $name }}" 
-    style="{{ $border ? 'border-bottom: 1px solid #ced4da;' : '' }} height: 25px; font-size: 14px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
+    style="{{ $border ? 'border-bottom: 1px solid #ced4da;' : '' }} height: 25px; font-size: 14px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0px 5px;"
     >{{ $value }}</div>
 </div>
 
