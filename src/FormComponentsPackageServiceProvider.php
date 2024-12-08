@@ -1,5 +1,9 @@
 <?php
 
+// El comando para publicar estos recursos sería: 
+// php artisan vendor:publish --tag=fcomponents-styles
+
+
 namespace Eaquinta\FormComponentsPackage;
 
 use Illuminate\Support\Facades\Blade;
@@ -36,6 +40,11 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
     {       
         // Cargar vistas
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
+        // Publicar CSS
+        $this->publishes([
+            __DIR__ . '/../resources/css/form-components.css' => public_path('vendor/fcomponents/form-components.css'),
+        ], 'fcomponents-styles');
+        // Registrar componentes
         Blade::component('fc-text-display',             TextDisplay::class);
         Blade::component('fc-text-input',               TextInput::class);
         Blade::component('fc-text-area-input',          TextAreaInput::class);
@@ -51,7 +60,5 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-button-add',               ButtonAdd::class);
         Blade::component('fc-button-edit',              ButtonEdit::class);
         Blade::component('fc-button-custom',            ButtonCustom::class);
-        //Blade::component('fcomponents::components.hola', 'fc-text-input');
-        //dd('Holax');
     }
 }

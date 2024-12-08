@@ -1,3 +1,5 @@
+<link href="{{ asset('vendor/fcomponents/form-components.css') }}" rel="stylesheet">
+
 @if($label !== false)    
     <label for="{{ $name }}" class="fw-500 fs-rem-80">
         {{ __($label) }}
