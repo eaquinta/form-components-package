@@ -42,7 +42,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
         // Publicar CSS
         $this->publishes([
-            __DIR__ . '/../resources/css/form-components.css' => public_path('vendor/fcomponents/form-components.css'),
+            __DIR__ . '/resources/css/form-components.css' => public_path('vendor/fcomponents/form-components.css'),
         ], 'fcomponents-styles');
         // Registrar componentes
         Blade::component('fc-text-display',             TextDisplay::class);
