@@ -12,6 +12,8 @@
     id="{{ $prefixId }}{{ $name }}" 
     class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
     value="{{ $value }}"
-    {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}} 
-    {{ $readOnly ? 'disabled readonly' : ''}}>
+    {{ $placeholder ? 'placeholder="' . __($label) . '"' : '' }} 
+    {{ $readOnly ? 'readonly' : '' }} 
+    {{ $disabled ? 'disabled' : '' }}
+>    
 <div class="invalid-feedback"></div>
