@@ -14,10 +14,11 @@ class SwitchInput extends Component
     public $label;
     public $required;
     public $readOnly;
+    public $value;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = null)
     {
         //Log::info($prefixId);        
         $this->name     = $name;
@@ -25,6 +26,7 @@ class SwitchInput extends Component
         $this->required = $required;
         $this->prefixId = $prefixId;
         $this->readOnly = $readOnly;
+        $this->value    = $value;
     }
 
     /**
