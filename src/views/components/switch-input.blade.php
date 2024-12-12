@@ -5,7 +5,8 @@
         id="{{ $prefixId }}{{ $name }}" 
         name="{{ $name }}"
         value="{{ $value }}" 
-        {{ $value ? 'checked' : '' }}
+        {{ $value ? 'checked' : '' }} 
+        {{ $disabled ? 'disabled' : '' }}
     >
     <label 
         class="form-check-label fw-500 fs-rem-80" 
