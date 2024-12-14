@@ -17,7 +17,7 @@ class ButtonUpdate extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($label, $icon = 'far fa-save' $id = 'btn-update')
+    public function __construct($label, $icon = 'far fa-save', $id = 'btn-update')
     {
         $this->id     = $id;
         $this->label    = $label;
