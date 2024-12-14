@@ -18,6 +18,7 @@ use Eaquinta\FormComponentsPackage\Components\SelectInput;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
 use Eaquinta\FormComponentsPackage\Components\TextDisplay;
 use Eaquinta\FormComponentsPackage\Components\ButtonCustom;
+use Eaquinta\FormComponentsPackage\Components\ButtonUpdate;
 use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
 use Eaquinta\FormComponentsPackage\Components\TextAreaInput;
@@ -59,6 +60,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-button-close',             ButtonClose::class);
         Blade::component('fc-button-add',               ButtonAdd::class);
         Blade::component('fc-button-edit',              ButtonEdit::class);
+        Blade::component('fc-button-update',            ButtonUpdate::class);
         Blade::component('fc-button-custom',            ButtonCustom::class);
     }
 }
