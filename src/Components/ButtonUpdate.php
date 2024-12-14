@@ -9,8 +9,7 @@ use Illuminate\Support\Facades\Log;
 
 class ButtonUpdate extends Component
 {
-    //public $prefixId;
-    //public $name;
+    public $id;    
     public $label;
     public $icon;
     //public $required;
@@ -18,10 +17,9 @@ class ButtonUpdate extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($label, $icon = 'far fa-save')
+    public function __construct($label, $icon = 'far fa-save' $id = 'btn-update')
     {
-        //Log::info($prefixId);        
-        //$this->name     = $name;
+        $this->id     = $id;
         $this->label    = $label;
         $this->icon     = $icon;
         // $this->prefixId = $prefixId;
@@ -33,6 +31,6 @@ class ButtonUpdate extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('fcomponents::components.button-add');
+        return view('fcomponents::components.button-update');
     }
 }
