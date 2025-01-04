@@ -1,3 +1,4 @@
+<input type="hidden" name="{{ $name }}" value="0">
 <div class="form-check form-switch">
     <input 
         class="form-check-input" 
