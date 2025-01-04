@@ -6,7 +6,7 @@
         id="{{ $prefixId }}{{ $name }}" 
         name="{{ $name }}"
         value="{{ $value }}" 
-        {{ $value ? 'checked' : '' }} 
+        {{ $checked ? 'checked' : '' }} 
         {{ $disabled ? 'disabled' : '' }}
     >
     <label 
