@@ -18,10 +18,12 @@ class TextDisplay extends Component
     public $value;
     public $class;
     public $border;
+    public $inLine;
+    public $labelWidth;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '', $border = true)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '', $border = true, $inline = false, $columnWidth = null)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -33,6 +35,8 @@ class TextDisplay extends Component
         $this->value        = $value;
         $this->class        = $class;
         $this->border       = $border;
+        $this->inLine       = $inline;
+        $this->labelWidth   = $labelWidth;
     }
 
     /**
