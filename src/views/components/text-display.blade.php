@@ -1,6 +1,6 @@
 <link href="{{ asset('vendor/fcomponents/form-components.css') }}" rel="stylesheet">
 @if($inLine)    
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center mt-2">
         @if($label !== false)
             <label for="{{ $name }}" class="fw-500 fs-rem-80" style="{{ $labelWidth ? 'width: ' . $labelWidth . ';' : '' }}">
                 {{ __($label) }}
