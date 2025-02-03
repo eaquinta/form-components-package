@@ -12,7 +12,8 @@
     rows="{{ $rows }}" 
     {{ $placeholder ? 'placeholder="' . __($label) . '"' : ''}}
     aria-invalid="false"
-    {{ $readOnly ? 'disabled readonly' : ''}}
+    {{ $readOnly ? 'readonly' : '' }}
+    {{ $disabled ? 'disabled' : '' }}
 >
 {{ $value }}
 </textarea>

@@ -18,10 +18,11 @@ class TextAreaInput extends Component
     public $rows;
     public $cols;
     public $value;
+    public $disabled;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $rows = 3, $cols = 20, $value = null)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $disabled = false, $placeholder = false, $rows = 3, $cols = 20, $value = null)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -33,6 +34,7 @@ class TextAreaInput extends Component
         $this->rows         = $rows;
         $this->cols         = $cols;
         $this->value        = $value;
+        $this->disabled     = $disabled;
     }
 
     /**
