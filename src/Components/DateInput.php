@@ -12,17 +12,19 @@ class DateInput extends Component
     public $prefixId;
     public $name;
     public $label;
+    public $showLabel;
     public $required;
     public $readOnly;
     public $value;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = '')
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = '', $showLabel = true)
     {
         //Log::info($prefixId);        
         $this->name     = $name;
         $this->label    = $label;
+        $this->showLabel = $showLabel;
         $this->required = $required;
         $this->prefixId = $prefixId;
         $this->readOnly = $readOnly;

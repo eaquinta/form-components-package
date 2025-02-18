@@ -1,9 +1,11 @@
-<label for="{{ $name }}" class="fw-500 fs-rem-80">
-    {{ __($label) }}
-    @if($required)
-        <span class="text-danger">*</span>
-    @endif
-</label>
+@if($showLabel)
+    <label for="{{ $name }}" class="fw-500 fs-rem-80">
+        {{ __($label) }}
+        @if($required)
+            <span class="text-danger">*</span>
+        @endif
+    </label>
+@endif
 <input type="date"
     name="{{ $name }}" 
     id="{{ $prefixId }}{{ $name }}"
