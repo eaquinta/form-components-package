@@ -20,7 +20,7 @@ class SwitchInput extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = 0, $disabled = false, $checked = false)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = 1, $disabled = false, $checked = false)
     {
         //Log::info($prefixId);        
         $this->name     = $name;
