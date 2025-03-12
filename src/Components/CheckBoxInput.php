@@ -14,10 +14,13 @@ class CheckBoxInput extends Component
     public $label;
     public $required;
     public $readOnly;
+    public $value;
+    public $disabled;
+    public $checked;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = 1, $disabled = false, $checked = false)
     {
         //Log::info($prefixId);        
         $this->name     = $name;
@@ -25,6 +28,9 @@ class CheckBoxInput extends Component
         $this->required = $required;
         $this->prefixId = $prefixId;
         $this->readOnly = $readOnly;
+        $this->value    = $value;
+        $this->disabled = $disabled;
+        $this->checked  = $checked;
     }
 
     /**

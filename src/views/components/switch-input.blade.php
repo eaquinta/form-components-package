@@ -13,6 +13,9 @@
         class="form-check-label fw-500 fs-rem-80" 
         for="{{ $name }}"
     >
-    {{ __($label) }}
+        {{ __($label) }}
     </label>
 </div>
+@if (!$readOnly)
+    <div class="invalid-feedback"></div>
+@endif
