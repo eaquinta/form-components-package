@@ -1,5 +1,5 @@
 <input type="hidden" name="{{ $name }}" value="0">
-<div class="form-check form-switch">
+<div class="form-check form-switch {{ $class ?? '' }}">
     <input 
         class="form-check-input" 
         type="checkbox" 
