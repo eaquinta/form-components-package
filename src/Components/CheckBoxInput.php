@@ -17,12 +17,12 @@ class CheckBoxInput extends Component
     public $value;
     public $disabled;
     public $checked;
+    public $class;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = 1, $disabled = false, $checked = false)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $value = 1, $disabled = false, $checked = false, $class = '')
     {
-        //Log::info($prefixId);        
         $this->name     = $name;
         $this->label    = $label;
         $this->required = $required;
@@ -31,6 +31,7 @@ class CheckBoxInput extends Component
         $this->value    = $value;
         $this->disabled = $disabled;
         $this->checked  = $checked;
+        $this->class    = $class;
     }
 
     /**

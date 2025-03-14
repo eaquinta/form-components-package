@@ -1,4 +1,6 @@
+# https://packagist.org/packages/eaquinta/form-components-package
+
 composer dump-autoload
 .\commit.ps1
-git tag -a v1.0.7 -m "Publicación de la versión 1.0.7"
-git push origin v1.0.7
+git tag -a v1.0.8 -m "Publicación de la versión 1.0.8"
+git push origin v1.0.8

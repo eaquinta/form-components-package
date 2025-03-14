@@ -1,7 +1,7 @@
 <input type="hidden" name="{{ $name }}" value="0">
 <div class="form-check">
     <input 
-        class="form-check-input"
+        class="form-check-input {{ $class }}"
         type="checkbox"
         id="{{ $prefixId }}{{ $name }}"
         name="{{ $name }}"
