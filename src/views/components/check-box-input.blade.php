@@ -5,6 +5,7 @@
         type="checkbox"
         id="{{ $prefixId }}{{ $name }}"
         name="{{ $name }}"
+        value="{{ $value }}"
         {{ $checked ? 'checked' : '' }} 
         {{ $disabled ? 'disabled' : '' }}
     >
