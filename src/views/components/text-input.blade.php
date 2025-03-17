@@ -9,7 +9,7 @@
 <input 
     type="text" 
     name="{{ $name }}" 
-    id="{{ $prefixId }}{{ $name }}" 
+    id="{{ $prefixId }}{{ $id ? $id : $name }}" 
     class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
     value="{{ $value }}"
     {{ $placeholder ? 'placeholder="' . __($label) . '"' : '' }} 

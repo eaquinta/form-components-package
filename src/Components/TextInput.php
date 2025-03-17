@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 
 class TextInput extends Component
 {
+    public $id;
     public $prefixId;
     public $name;
     public $label;
@@ -21,9 +22,20 @@ class TextInput extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $placeholder = false, $value = null, $class = '', $disabled = false)
+    public function __construct(
+        $name,
+        $label,
+        $required = false,
+        $prefixId = '',
+        $readOnly = false, 
+        $placeholder = false, 
+        $value = null, 
+        $class = '', 
+        $disabled = false, 
+        $id = null
+    )
     {
-        //Log::info($prefixId);        
+        $this->id           = $id;
         $this->name         = $name;
         $this->label        = $label;
         $this->required     = $required;
