@@ -6,7 +6,7 @@
         @endif
         @isset($url)
             <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                <i class="fas fa-external-link-alt fs-rem-50"></i>
+                <i class="fas fa-link fs-rem-65"></i>
             </a>
         @endisset
     </label>
