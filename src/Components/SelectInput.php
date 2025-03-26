@@ -17,7 +17,7 @@ class SelectInput extends Component
     public $optionsList;
     public $value;
     public $class;
-    public $url
+    public $url;
     /**
      * Create a new component instance.
      */
