@@ -4,6 +4,11 @@
         @if($required)
             <span class="text-danger">*</span>
         @endif
+        @isset($url)
+            <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                <i class="fas fa-external-link-alt fs-rem-50"></i>
+            </a>
+        @endisset
     </label>
 @endif
 <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" data-placeholder="{{ __($label) }}">
