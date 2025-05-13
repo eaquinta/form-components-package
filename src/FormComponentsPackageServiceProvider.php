@@ -54,6 +54,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-input-textarea',           TextAreaInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
+        Blade::component('fc-input-switch',             SwitchInput::class);
         Blade::component('fc-date-input',               DateInput::class);
         Blade::component('fc-email-input',              EmailInput::class);
         Blade::component('fc-password-input',           PasswordInput::class);
