@@ -14,7 +14,7 @@
 <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $name }}" data-placeholder="{{ __($label) }}">
     @foreach ($optionsList as $key => $optionValue)
         <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
-            {{ $optionValue }}
+            {{ __($optionValue) }}
         </option>
     @endforeach
 </select>
