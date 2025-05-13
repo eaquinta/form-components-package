@@ -50,15 +50,15 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-display-text',             TextDisplay::class);
 
         Blade::component('fc-text-input',               TextInput::class);
-        Blade::component('fc-input-text',             TextInput::class);
+        Blade::component('fc-input-text',               TextInput::class);
         Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
         Blade::component('fc-date-input',               DateInput::class);
-        Blade::component('fc-email-input',              EmailInput::class);        
+        Blade::component('fc-email-input',              EmailInput::class);
         Blade::component('fc-password-input',           PasswordInput::class);
         Blade::component('fc-select-multiple-input',    SelectMultipleInput::class);
         Blade::component('fc-select-input',             SelectInput::class);
-        
+        Blade::component('fc-input-select',             SelectInput::class);
         Blade::component('fc-check-box-input',          CheckBoxInput::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
