@@ -38,7 +38,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
      * Bootstrap services.
      */
     public function boot(): void
-    {       
+    {
         // Cargar vistas
         $this->loadViewsFrom(__DIR__ . '/views', 'fcomponents');
         // Publicar CSS
@@ -47,7 +47,10 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         ], 'fcomponents-styles');
         // Registrar componentes
         Blade::component('fc-text-display',             TextDisplay::class);
+        Blade::component('fc-display-text',             TextDisplay::class);
+
         Blade::component('fc-text-input',               TextInput::class);
+        Blade::component('fc-input-text',             TextInput::class);
         Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
         Blade::component('fc-date-input',               DateInput::class);
@@ -55,6 +58,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-password-input',           PasswordInput::class);
         Blade::component('fc-select-multiple-input',    SelectMultipleInput::class);
         Blade::component('fc-select-input',             SelectInput::class);
+        
         Blade::component('fc-check-box-input',          CheckBoxInput::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
