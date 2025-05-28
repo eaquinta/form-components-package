@@ -14,6 +14,7 @@ use Eaquinta\FormComponentsPackage\Components\TextInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonEdit;
 use Eaquinta\FormComponentsPackage\Components\EmailInput;
 use Eaquinta\FormComponentsPackage\Components\ButtonClose;
+use Eaquinta\FormComponentsPackage\Components\FileInput;
 use Eaquinta\FormComponentsPackage\Components\SelectInput;
 use Eaquinta\FormComponentsPackage\Components\SwitchInput;
 use Eaquinta\FormComponentsPackage\Components\TextDisplay;
@@ -53,6 +54,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-input-text',               TextInput::class);
         Blade::component('fc-text-area-input',          TextAreaInput::class);
         Blade::component('fc-input-textarea',           TextAreaInput::class);
+        Blade::component('fc-input-file',               FileInput::class);
         Blade::component('fc-switch-input',             SwitchInput::class);
         Blade::component('fc-input-switch',             SwitchInput::class);
         Blade::component('fc-date-input',               DateInput::class);
