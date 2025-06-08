@@ -3,5 +3,5 @@
 composer dump-autoload
 .\commit.ps1
 bash commit.sh
-git tag -a v1.0.19 -m "Publicación de la versión 1.0.19"
-git push origin v1.0.19
+git tag -a v1.0.20 -m "Publicación de la versión 1.0.20"
+git push origin v1.0.20
