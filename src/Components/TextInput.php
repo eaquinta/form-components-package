@@ -19,6 +19,7 @@ class TextInput extends Component
     public $value;
     public $class;
     public $disabled;
+    public $requiredChar;
     /**
      * Create a new component instance.
      */
@@ -32,7 +33,8 @@ class TextInput extends Component
         $value = null, 
         $class = '', 
         $disabled = false, 
-        $id = null
+        $id = null,
+        $requiredChar = '*',
     )
     {
         $this->id           = $id;
@@ -45,6 +47,7 @@ class TextInput extends Component
         $this->value        = $value;
         $this->class        = $class;
         $this->disabled     = $disabled;
+        $this->requiredChar = $requiredChar;
     }
 
     /**

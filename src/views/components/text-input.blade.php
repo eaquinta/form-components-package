@@ -2,7 +2,7 @@
     <label for="{{ $name }}" class="fw-500 fs-rem-80">
         {{ __($label) }}
         @if($required)
-            <span class="text-danger">*</span>
+            <span class="text-danger">{{ $requiredChar }}</span>
         @endif
     </label>
 @endif
