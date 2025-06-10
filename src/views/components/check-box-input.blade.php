@@ -19,3 +19,11 @@
 @if (!$readOnly)
     <div class="invalid-feedback"></div>
 @endif
+
+{{-- <div class="form-group">
+    <label for="require_matri_name" class="fw-500 fs-rem-80"></label>
+    <div class="form-check mt-1">
+        <input class="form-check-input" type="checkbox" id="require_matri_name" name="require_matri_name" checked>
+        <label for="require_matri_name">asdf</label>
+    </div>
+</div> --}}
