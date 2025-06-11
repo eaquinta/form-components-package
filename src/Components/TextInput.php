@@ -16,6 +16,7 @@ class TextInput extends Component
     public $required;
     public $readOnly;
     public $placeholder;
+    public $placeholderText;
     public $value;
     public $class;
     public $disabled;
@@ -30,7 +31,8 @@ class TextInput extends Component
         $required = false,
         $prefixId = '',
         $readOnly = false, 
-        $placeholder = false, 
+        $placeholder = false,
+        $placeholderText = null,
         $value = null, 
         $class = '', 
         $disabled = false, 
@@ -39,18 +41,19 @@ class TextInput extends Component
         $requiredDisable = false
     )
     {
-        $this->id           = $id;
-        $this->name         = $name;
-        $this->label        = $label;
-        $this->required     = $required;
-        $this->prefixId     = $prefixId;
-        $this->readOnly     = $readOnly;
-        $this->placeholder  = $placeholder;
-        $this->value        = $value;
-        $this->class        = $class;
-        $this->disabled     = $disabled;
-        $this->requiredChar = $requiredChar;
-        $this->requiredDisable = $requiredDisable;
+        $this->id               = $id;
+        $this->name             = $name;
+        $this->label            = $label;
+        $this->required         = $required;
+        $this->prefixId         = $prefixId;
+        $this->readOnly         = $readOnly;
+        $this->placeholder      = $placeholder;
+        $this->placeholderText  = $placeholderText;
+        $this->value            = $value;
+        $this->class            = $class;
+        $this->disabled         = $disabled;
+        $this->requiredChar     = $requiredChar;
+        $this->requiredDisable  = $requiredDisable;
     }
 
     /**
