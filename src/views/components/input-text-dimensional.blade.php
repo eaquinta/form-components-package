@@ -13,29 +13,26 @@
         @endif
     </label>
 @endif
-<div class="form-group row">
-    <div class="col-md-8">
+<div class="input-group">
     <input 
         type="text" 
         name="{{ $name }}" 
         id="{{ $prefixId }}{{ $id ? $id : $name }}" 
         class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
-        value="{{ $value }}"
+        value="{{ $value }}" 
+        style="width: 60%;"
         {!! $placeholder ? 'placeholder="' . __($placeholderText ?? $label) . '"' : '' !!}
         {{ $readOnly ? 'readonly' : '' }} 
         {{ $disabled ? 'disabled' : '' }}
-    >   
-    </div>
-    <div class="col-md-4">
-        <select class="form-select" name="{{ $nameDimensional }}" id="{{ $prefixId }}{{ $nameDimensional }}">
-            <!-- <option value="kg">kg</option>
-            <option value="lbs">lbs</option> -->
-            @foreach ($optionsList as $key => $optionValue)
-                <option value="{{ $key }}" {{ $key == $valueDimensional ? 'selected' : '' }}>
-                    {{ __($optionValue) }}
-                </option>
-            @endforeach
-        </select>
-    </div>
+    >
+    <select class="form-select" name="{{ $nameDimensional }}" id="{{ $prefixId }}{{ $nameDimensional }}">
+        <!-- <option value="kg">kg</option>
+        <option value="lbs">lbs</option> -->
+        @foreach ($optionsList as $key => $optionValue)
+            <option value="{{ $key }}" {{ $key == $valueDimensional ? 'selected' : '' }}>
+                {{ __($optionValue) }}
+            </option>
+        @endforeach
+    </select>
 </div> 
 <div class="invalid-feedback"></div>
