@@ -25,6 +25,7 @@ use Eaquinta\FormComponentsPackage\Components\CheckBoxInput;
 use Eaquinta\FormComponentsPackage\Components\PasswordInput;
 use Eaquinta\FormComponentsPackage\Components\TextAreaInput;
 use Eaquinta\FormComponentsPackage\Components\SelectMultipleInput;
+use Eaquinta\FormComponentsPackage\Components\InputTextDimensional;
 
 class FormComponentsPackageServiceProvider extends ServiceProvider
 {
