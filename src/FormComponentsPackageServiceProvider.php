@@ -71,6 +71,7 @@ class FormComponentsPackageServiceProvider extends ServiceProvider
         Blade::component('fc-input-select',             SelectInput::class);
         Blade::component('fc-check-box-input',          CheckBoxInput::class);
         Blade::component('fc-input-checkbox',           CheckBoxInput::class);
+        Blade::component('fc-input-text-dimensional',   InputTextDimensional::class);
 
         Blade::component('fc-button-close',             ButtonClose::class);
         Blade::component('fc-button-add',               ButtonAdd::class);
