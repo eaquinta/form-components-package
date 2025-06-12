@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Log;
 
-class TextInput extends Component
+class InputTextDimensional extends Component
 {
     public $id;
     public $prefixId;
