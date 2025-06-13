@@ -22,7 +22,7 @@ class SelectInput extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $id = null, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [], $value = null, $class = '', $url = null)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [], $value = null, $class = '', $url = null, $id = null)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
