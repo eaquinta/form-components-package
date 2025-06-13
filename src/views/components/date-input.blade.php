@@ -8,7 +8,7 @@
 @endif
 <input type="date"
     name="{{ $name }}" 
-    id="{{ $prefixId }}{{ $name }}"
+    id="{{ $prefixId }}{{ $id ? $id : $name }}"
     class="form-control rounded-1 bg-white" 
     placeholder="{{ __($label) }}"
     value="{{ $value ?? '' }}" 
