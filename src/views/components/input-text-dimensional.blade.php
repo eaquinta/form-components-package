@@ -18,14 +18,14 @@
         type="text" 
         name="{{ $name }}" 
         id="{{ $prefixId }}{{ $id ? $id : $name }}" 
-        class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
+        class="form-control rounded-top-start-1 rounded-bottom-start-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
         value="{{ $value }}" 
         style="width: 60%;"
         {!! $placeholder ? 'placeholder="' . __($placeholderText ?? $label) . '"' : '' !!}
         {{ $readOnly ? 'readonly' : '' }} 
         {{ $disabled ? 'disabled' : '' }}
     >
-    <select class="form-select" name="{{ $nameDimensional }}" id="{{ $prefixId }}{{ $nameDimensional }}">
+    <select class="form-select rounded-top-end-1 rounded-bottom-end-1" name="{{ $nameDimensional }}" id="{{ $prefixId }}{{ $nameDimensional }}">
         <!-- <option value="kg">kg</option>
         <option value="lbs">lbs</option> -->
         @foreach ($optionsList as $key => $optionValue)
