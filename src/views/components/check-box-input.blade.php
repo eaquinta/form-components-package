@@ -1,12 +1,12 @@
 <input type="hidden" name="{{ $name }}" value="0">
 <div class="form-check">
-    <input 
+    <input
         class="form-check-input {{ $class }}"
         type="checkbox"
         id="{{ $prefixId }}{{ $name }}"
         name="{{ $name }}"
         value="{{ $value }}"
-        {{ $checked ? 'checked' : '' }} 
+        {{ $checked ? 'checked' : '' }}
         {{ $disabled ? 'disabled' : '' }}
     >
     <label
