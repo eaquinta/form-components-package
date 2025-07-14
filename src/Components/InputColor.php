@@ -26,11 +26,11 @@ class InputColor extends Component
      * Create a new component instance.
      */
     public function __construct(
-        $id = null,
         $name,
+        $label,
+        $id = null,
         $prefixId = '',
         $value = null, 
-        $label,
         // $required = false,
         // $readOnly = false, 
         // $placeholder = false,
