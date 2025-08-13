@@ -12,6 +12,7 @@ class InputTextDimensional extends Component
     public $id;
     public $prefixId;
     public $name;
+    public $idDimensional;
     public $nameDimensional;
     public $label;
     public $required;
@@ -25,6 +26,7 @@ class InputTextDimensional extends Component
     public $requiredChar;
     public $requiredDisable;
     public $optionsList;
+    public $size;
     /**
      * Create a new component instance.
      */
@@ -42,13 +44,17 @@ class InputTextDimensional extends Component
         $class = '', 
         $disabled = false, 
         $id = null,
+        $idDimensional = null,
         $requiredChar = '*',
         $requiredDisable = false,
-        $optionsList = []
+        $optionsList = [],
+        $size = null,
+
     )
     {
         $this->id               = $id;
         $this->name             = $name;
+        $this->idDimensional    = $idDimensional;
         $this->nameDimensional  = $nameDimensional;
         $this->label            = $label;
         $this->required         = $required;
@@ -63,6 +69,8 @@ class InputTextDimensional extends Component
         $this->requiredChar     = $requiredChar;
         $this->requiredDisable  = $requiredDisable;
         $this->optionsList      = $optionsList;
+        $this->size             = $size;
+
     }
 
     /**

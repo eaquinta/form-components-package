@@ -13,21 +13,23 @@
         @endif
     </label>
 @endif
-<div class="input-group">
+<div class="input-group {{ $size ? 'input-group-' . $size : '' }} {{ $class ?? '' }}">
     <input 
         type="text" 
         name="{{ $name }}" 
         id="{{ $prefixId }}{{ $id ? $id : $name }}" 
-        class="form-control rounded-top-start-1 rounded-bottom-start-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class ?? '' }}" 
+        class="form-control bg-white text-end" 
         value="{{ $value }}" 
-        style="width: 60%;"
         {!! $placeholder ? 'placeholder="' . __($placeholderText ?? $label) . '"' : '' !!}
         {{ $readOnly ? 'readonly' : '' }} 
         {{ $disabled ? 'disabled' : '' }}
     >
-    <select class="form-select rounded-top-end-1 rounded-bottom-end-1" name="{{ $nameDimensional }}" id="{{ $prefixId }}{{ $nameDimensional }}">
-        <!-- <option value="kg">kg</option>
-        <option value="lbs">lbs</option> -->
+    <select 
+        class="form-select flex-grow-0 w-auto" 
+        name="{{ $nameDimensional }}" 
+        id="{{ $prefixId }}{{ $idDimensional ? $idDimensional : $nameDimensional }}"
+        style="padding-right: 1.5rem !important;"
+    >
         @foreach ($optionsList as $key => $optionValue)
             <option value="{{ $key }}" {{ $key == $valueDimensional ? 'selected' : '' }}>
                 {{ __($optionValue) }}
