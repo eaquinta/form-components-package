@@ -28,7 +28,7 @@
         class="form-select flex-grow-0 w-auto" 
         name="{{ $nameDimensional }}" 
         id="{{ $prefixId }}{{ $idDimensional ? $idDimensional : $nameDimensional }}"
-        style="padding-right: 1.5rem !important;"
+        style="padding-right: 2rem !important;"
     >
         @foreach ($optionsList as $key => $optionValue)
             <option value="{{ $key }}" {{ $key == $valueDimensional ? 'selected' : '' }}>
