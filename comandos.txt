@@ -1,5 +1,5 @@
 # https://packagist.org/packages/eaquinta/form-components-package
 
 bash commit.sh
-git tag -a v1.0.45 -m "Publicación de la versión 1.0.45"
-git push origin v1.0.45
+git tag -a v1.0.46 -m "Publicación de la versión 1.0.4"
+git push origin v1.0.46
