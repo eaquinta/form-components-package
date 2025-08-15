@@ -11,6 +11,7 @@ class FileInput extends Component
 {
     public $prefixId;
     public $name;
+    public $id;
     public $label;
     public $required;
     public $readOnly;
@@ -32,10 +33,10 @@ class FileInput extends Component
         $placeholder = false, 
         $accept = '', 
         $multiple = false,
-        $class = ''
+        $class = '',
+        $id = null
     )
     {
-        //Log::info($prefixId);        
         $this->name         = $name;
         $this->label        = $label;
         $this->required     = $required;
@@ -46,6 +47,7 @@ class FileInput extends Component
         $this->multiple     = $multiple;
         $this->class        = $class;
         $this->disabled     = $disabled;
+        $this->id           = $id;
     }
 
     /**

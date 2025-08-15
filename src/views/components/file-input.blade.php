@@ -6,13 +6,13 @@
         @endif
     </label>
 @endif
-<input 
-    type="file" 
-    name="{{ $name }}{{ $multiple ? '[]' : '' }}" 
-    id="{{ $prefixId }}{{ $name }}" 
-    class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class }}" 
-    {{ $placeholder ? 'placeholder="' . __($label) . '"' : '' }} 
-    {{ $readOnly ? 'readonly' : '' }} 
+<input
+    type="file"
+    name="{{ $name }}{{ $multiple ? '[]' : '' }}"
+    id="{{ $prefixId }}{{ $id ? $id : $name }}"
+    class="form-control rounded-1 bg-white {{ $label === false ? 'mt-1' : '' }} {{ $class }}"
+    {{ $placeholder ? 'placeholder="' . __($label) . '"' : '' }}
+    {{ $readOnly ? 'readonly' : '' }}
     {{ $disabled ? 'disabled' : '' }}
     {{ $accept ? 'accept="' . $accept . '"' : '' }}
     {{ $multiple ? 'multiple' : '' }}
