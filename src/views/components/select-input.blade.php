@@ -11,13 +11,28 @@
         @endisset
     </label>
 @endif
-<select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ __($label) }}">
-    @foreach ($optionsList as $key => $optionValue)
-        <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
-            {{ __($optionValue) }}
-        </option>
-    @endforeach
-</select>
+@isset($icon)
+    <div class="input-group">
+        <span class="input-group-text">
+            <i class="{{ $icon }}" @isset($iconColor) style="color: {{ $iconColor }};" @endisset></i>
+        </span>
+        <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ __($label) }}">
+            @foreach ($optionsList as $key => $optionValue)
+                <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
+                    {{ __($optionValue) }}
+                </option>
+            @endforeach
+        </select>
+    </div>
+@else
+    <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ __($label) }}">
+        @foreach ($optionsList as $key => $optionValue)
+            <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
+                {{ __($optionValue) }}
+            </option>
+        @endforeach
+    </select>
+@endisset
 @if (!$readOnly)
     <div class="invalid-feedback"></div>
 @endif
