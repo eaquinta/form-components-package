@@ -21,10 +21,11 @@ class SelectInput extends Component
     public $url;
     public $icon;
     public $iconColor;
+    public $placeholder;
     /**
      * Create a new component instance.
      */
-    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [], $value = null, $class = '', $url = null, $id = null, $icon = null, $iconColor = null)
+    public function __construct($name, $label, $required = false, $prefixId = '', $readOnly = false, $optionsList = [], $value = null, $class = '', $url = null, $id = null, $icon = null, $iconColor = null, $placeholder = null)
     {
         //Log::info($prefixId);        
         $this->name         = $name;
@@ -39,6 +40,7 @@ class SelectInput extends Component
         $this->url          = $url;
         $this->icon         = $icon;
         $this->iconColor    = $iconColor;
+        $this->placeholder  = $placeholder;
     }
 
     /**

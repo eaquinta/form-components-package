@@ -16,7 +16,7 @@
         <span class="input-group-text">
             <i class="{{ $icon }}" @isset($iconColor) style="color: {{ $iconColor }};" @endisset></i>
         </span>
-        <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ __($label) }}">
+        <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ $placeholder ?? __($label) }}">
             @foreach ($optionsList as $key => $optionValue)
                 <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
                     {{ __($optionValue) }}
@@ -25,7 +25,7 @@
         </select>
     </div>
 @else
-    <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ __($label) }}">
+    <select class="form-select {{ $class }}" name="{{ $name }}" id="{{ $prefixId }}{{ $id ? $id : $name }}" data-placeholder="{{ $placeholder ?? __($label) }}">
         @foreach ($optionsList as $key => $optionValue)
             <option value="{{ $key }}" {{ $key == $value ? 'selected' : '' }}>
                 {{ __($optionValue) }}
